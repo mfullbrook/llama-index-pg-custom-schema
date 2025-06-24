@@ -1,0 +1,21 @@
+This was created by Claude Code with one prompt.  I dictated the prompt with Super Whisper, hence the mistakes in grammar.
+
+---
+
+This is a completely empty python project.  I want to use this project to create
+an experiment with Llama index.
+
+When using the LlamaIndex postgres vector store class it will handle the table 
+schema creation for us.
+
+This is convenient for most projects, but it only allows you to store attributes
+about a chunk of text in the metadata column. I want to be able to have more
+control over the columns. I want to be able to create foreign keys. Basically, I
+want to be able to control the schema of the table that LamarIndex creates, but
+ideally, still be able to use the LamarIndex Postgres vector store with its
+standard interface that is compatible with the rest of LlamaIndex.
+
+You can use the context7 documentation tool to better understand the llama index
+classes or look in the .venv folder at the source code.
+
+Please think carefully and make a plan for how we can achieve this goal
