@@ -2,37 +2,37 @@
 
 An extended PostgreSQL vector store that provides custom schema control while maintaining full compatibility with LlamaIndex's standard interface.
 
-## <¯ **Complete Solution Overview**
+## Complete Solution Overview
 
-### **Files Created:**
+### Files Created:
 1. **`custom_pg_vector_store.py`** - Main implementation
 2. **`example_usage.py`** - Comprehensive examples  
 3. **`test_compatibility.py`** - Compatibility verification
 
-### **Key Features Implemented:**
+### Key Features Implemented:
 
- **Custom Schema Control**
+**Custom Schema Control**
 - Add typed columns beyond metadata JSON
 - Support for String, Integer, Float, DateTime, Boolean, UUID types
 - Configurable nullable, unique, index, and default constraints
 
- **Foreign Key Relationships**
+**Foreign Key Relationships**
 - Full foreign key support with referential integrity
 - Configurable cascade options (CASCADE, RESTRICT, SET NULL)
 - Multi-table relational designs
 
- **Custom Indexes**
+**Custom Indexes**
 - Composite indexes across multiple columns
 - Performance optimization for custom queries
 - Flexible index configuration
 
- **Full LlamaIndex Compatibility**
+**Full LlamaIndex Compatibility**
 - Inherits from `PGVectorStore` 
 - All standard methods work unchanged
 - Compatible with `VectorStoreIndex`
 - Maintains async/sync operation support
 
-### **Usage Examples:**
+### Usage Examples:
 
 ```python
 # Basic custom columns
@@ -58,13 +58,13 @@ schema_config = CustomSchemaConfig(
 )
 ```
 
-### **Benefits Achieved:**
-- = **Relational Data**: Proper foreign keys and constraints
-- <× **Schema Control**: Full control over table structure
-- ¡ **Performance**: Custom indexes for optimal queries
-- = **Compatibility**: Works with all existing LlamaIndex code
-- =á **Type Safety**: Validated custom data types
-- =È **Scalability**: Production-ready PostgreSQL features
+### Benefits Achieved:
+- **Relational Data**: Proper foreign keys and constraints
+- **Schema Control**: Full control over table structure
+- **Performance**: Custom indexes for optimal queries
+- **Compatibility**: Works with all existing LlamaIndex code
+- **Type Safety**: Validated custom data types
+- **Scalability**: Production-ready PostgreSQL features
 
 The solution successfully bridges the gap between LlamaIndex's convenience and PostgreSQL's relational power, giving you the best of both worlds!
 
